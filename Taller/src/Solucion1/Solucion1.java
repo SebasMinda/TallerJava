@@ -1,5 +1,4 @@
 package Solucion1;
-
 import java.util.Scanner;
 
 public class Solucion1 {
