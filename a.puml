@@ -1,0 +1,25 @@
+@startuml
+class Solucion1.Solucion1 {
++ {static} void main(String[])
+}
+
+class Solucion1.Producto {
+~ String Codigo
+~ String Nombre
+~ double Precio
+~ int stock
+~ int cantidadVendida
++ String getCodigo()
++ void setCodigo(String)
++ String getNombre()
++ void setNombre(String)
++ double getPrecio()
++ void setPrecio(double)
++ int getStock()
++ void setStock(int)
++ int getCantidadVendida()
++ void setCantidadVendida(int)
+}
+
+
+@enduml
