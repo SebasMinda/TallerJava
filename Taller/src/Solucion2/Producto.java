@@ -50,11 +50,4 @@ public class Producto {
         this.cantidadVendida += cantidad;
     }
 
-    public String resumen() {
-        return "Tipo   : " + tipo +
-                "\nCódigo : " + codigo +
-                "\nNombre : " + nombre +
-                "\nPrecio : " + precio +
-                "\nStock  : " + stock;
-    }
 }

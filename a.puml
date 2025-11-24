@@ -1,25 +1,50 @@
 @startuml
-class Solucion1.Solucion1 {
+class Solucion2.ProductoNoPerecedero {
+- int mesesConservacion
++ int getMesesConservacion()
++ void setMesesConservacion(int)
+}
+
+
+class Solucion2.Producto {
+- String codigo
+- String nombre
+- String tipo
+- double precio
+- int stock
+- int cantidadVendida
++ String getCodigo()
++ String getNombre()
++ String getTipo()
++ double getPrecio()
++ int getStock()
++ int getCantidadVendida()
++ void setStock(int)
++ void sumarVenta(int)
++ String resumen()
+}
+
+
+class Solucion2.ProductoPerecedero {
+- String fechaCaducidad
+- String Lote
++ String getFechaCaducidad()
++ void setFechaCaducidad(String)
++ String getLote()
++ void setLote(String)
+}
+
+
+class Solucion2.Solucion2 {
+- {static} List<ProductoNoPerecedero> ListaProductoNoPerecedero
+- {static} List<ProductoPerecedero> ListaProductoPerecedero
+- {static} double totalVentas
 + {static} void main(String[])
 }
 
-class Solucion1.Producto {
-~ String Codigo
-~ String Nombre
-~ double Precio
-~ int stock
-~ int cantidadVendida
-+ String getCodigo()
-+ void setCodigo(String)
-+ String getNombre()
-+ void setNombre(String)
-+ double getPrecio()
-+ void setPrecio(double)
-+ int getStock()
-+ void setStock(int)
-+ int getCantidadVendida()
-+ void setCantidadVendida(int)
-}
 
 
+
+Solucion2.Producto <|-- Solucion2.ProductoNoPerecedero
+Solucion2.Producto <|-- Solucion2.ProductoPerecedero
 @enduml
