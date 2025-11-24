@@ -71,5 +71,4 @@ public class Producto {
     public void sumarVenta(int cantidad) {
         this.cantidadVendida += cantidad;
     }
-
 }
