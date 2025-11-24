@@ -130,6 +130,7 @@ public class Solucion2 {
                         }
                     }
                     break;
+
                 case 5:
                     System.out.println("\n--- Reabastecimiento de Stock ---\n");
                     System.out.print("Ingrese el código del producto para reabastecer: ");
