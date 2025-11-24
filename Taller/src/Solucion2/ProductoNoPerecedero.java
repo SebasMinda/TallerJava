@@ -19,8 +19,4 @@ public class ProductoNoPerecedero extends Producto {
     public void setMesesConservacion(int mesesConservacion) {
         this.mesesConservacion = mesesConservacion;
     }
-    public String resumenNP() {
-        return super.resumen()
-                + "\nMeses de conservación  : " + getMesesConservacion();
-    }
 }

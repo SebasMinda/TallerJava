@@ -26,10 +26,4 @@ public class ProductoPerecedero extends Producto {
     public void setLote(String lote) {
         this.Lote = lote;
     }
-    public String resumenP() {
-        // Devuelve el resumen como String en vez de imprimirlo y devolver null
-        return super.resumen()
-                + "\nFecha de caducidad  : " + getFechaCaducidad()
-                + "\nLote  : " + getLote();
-    }
 }
