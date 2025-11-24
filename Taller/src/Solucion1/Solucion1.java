@@ -31,7 +31,7 @@ public class Solucion1 {
             switch(opc){
                 case 1:
                     Producto producto =new Producto();
-                    System.out.println("\nIngrese los datos del producto no perecedero");
+                    System.out.println("\nIngrese los datos del producto perecedero");
                     System.out.println("Codigo: ");
                     sca.nextLine();
                     producto.Codigo=sca.nextLine();
@@ -53,7 +53,7 @@ public class Solucion1 {
                     break;
                 case 2:
                     Producto producto1 =new Producto();
-                    System.out.println("\nIngrese los datos del producto1 no perecedero");
+                    System.out.println("\nIngrese los datos del producto no perecedero");
                     System.out.printf("Codigo: ");
                     sca.nextLine();
                     producto1.Codigo= sca.nextLine();
