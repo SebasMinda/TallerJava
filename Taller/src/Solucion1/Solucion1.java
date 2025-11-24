@@ -13,7 +13,6 @@ public class Solucion1 {
         int[] cantidadventasproducto= new int[100];
         Scanner sca=new Scanner(System.in);
         int opc=-1;
-
         do{System.out.println("\n==============================");
             System.out.println("       MENU TIENDA");
             System.out.println("==============================");
